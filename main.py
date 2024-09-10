@@ -20,21 +20,21 @@ contrasenia = driver.find_element(By.NAME, "password")
 submit = driver.find_element(By.NAME, "logintoken")
 
 # Ingresar credenciales
-usuario.parent.execute_script("arguments[0].setAttribute('value', '22020318')", usuario)
-contrasenia.parent.execute_script("arguments[0].setAttribute('value', '064714')", contrasenia)
+usuario.parent.execute_script("arguments[0].setAttribute('value', '########')", usuario)
+contrasenia.parent.execute_script("arguments[0].setAttribute('value', '#######')", contrasenia)
 submit.submit()
 
 
 # Enviar el formulario
 
   # Esperar a que cargue la siguiente página
-
-clases = [["https://uamvirtual.uam.edu.ni/grado/course/view.php?id=9509", "finanzas"],
-           ["https://uamvirtual.uam.edu.ni/grado/course/view.php?id=9892", "Base de datos"],
-           ["https://uamvirtual.uam.edu.ni/grado/course/view.php?id=10080", "Investigacion de operaciones"],
-           ["https://uamvirtual.uam.edu.ni/grado/course/view.php?id=10068", "Estadistica"],
-           ["https://uamvirtual.uam.edu.ni/grado/course/view.php?id=9895", "Pob"],
-           ["https://uamvirtual.uam.edu.ni/grado/course/view.php?id=9881]", "Algebra lineal"]]
+#En esta lista tenes que poner los links de las clases que queres que se revisen, y el nombre de la clase
+clases = [["#####################################################", "finanzas"],
+           ["#####################################################", "Base de datos"],
+           ["#####################################################", "Investigacion de operaciones"],
+           ["#####################################################", "Estadistica"],
+           ["#####################################################", "Pob"],
+           ["#####################################################]", "Algebra lineal"]]
 
 asignaciones = []
 
@@ -68,6 +68,5 @@ for clase_url in clases:
 
         counterClases += 1
 
-# tabla = tabulate.tabulate(asignaciones, headers=["Tarea", "Link", "Semana", "Clase"], tablefmt="grid" )
-# print(tabla)
+
 createMd(asignaciones)

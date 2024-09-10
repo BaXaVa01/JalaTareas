@@ -6,7 +6,7 @@
 def createMd(asignaciones ):
 
 
-    # Nombre del archivo donde guardaremos las asignaciones en formato Markdown
+    # Aqui vas a pegar la ruta donde se va a guardar el archivo 
     archivo_md = "C:\\Users\\carva\\Documents\\Obsidian Vault\\Tareas_Clases.md"
 
     # Abre (o crea) el archivo Markdown en modo escritura
